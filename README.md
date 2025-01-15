@@ -4,35 +4,65 @@ This repository contains materials and scripts from my Master's thesis, which fo
 
 Prediction Accuracy: 90%
 
+
 ---
 
-## **Repository Structure**
+## **Features**
+1. **Contact Dynamics Analysis:**
+   - Data loading and hysteresis filtering.
+   - Fast Fourier Transform (FFT) for signal analysis.
+2. **Wöhler Curve Generation:**
+   - Using failure characteristics data for fatigue analysis.
+   - Includes manual input for specific amplitudes (e.g., 10 µm, 20 µm).
+3. **Prediction Tool (Python):**
+   - Lifecycle predictions using contact dynamics and failure characteristics data.
+   - Outputs cycle counts for specific limiting resistance thresholds.
+4. **Validation and Comparison:**
+   - Resistance and amplitude data comparisons across experiments.
 
-Lifetime-prediction-thesis/
-├── code/                          # Scripts and tools
-│   ├── matlab/                    # MATLAB scripts
-│   │   ├── conversion.m           # Script to convert .txt to .mat files
-│   │   ├── Loading_data_10_exp.m  # Combines multiple .mat files
-│   │   ├── Experiments_analysis.m # Generates failure characteristics
-│   │   ├── Final/                 # Final MATLAB scripts for analysis
-│   ├── python/                    # Python scripts
-│   │   ├── Prediction_tool.py     # Lifecycle prediction tool
-│   │   ├── spread_trendline_extrapolation.py # Updates Wöhler curve
-│   │   ├── Resistance/            # Resistance analysis scripts
-│   │   ├── Amplitude/             # Amplitude comparison scripts
-│   │   ├── Functions/             # Signal processing and utilities
-├── data/                          # Experimental and processed data
-│   ├── raw/                       # Raw experimental .txt data
-│   ├── processed/                 # Processed .mat files for analysis
-│   ├── validation/                # Validation datasets
-│   ├── examples/                  # Example data for scripts
-├── docs/                          # Documentation and resources
-│   ├── thesis.pdf                 # Full thesis document
-│   ├── figures/                   # Images, graphs, and plots
-│   ├── README.md                  # Main repository README
-├── results/                       # Outputs and results of analysis
-│   ├── wohler_curves/             # Generated Wöhler curves
-│   ├── predictions/               # Prediction outputs (e.g., cycle numbers)
-├── LICENSE                        # License for the repository
-└── README.md                      # Main description of the project
+---
+
+## **How to Use**
+
+### **1. Preprocess Data (MATLAB)**
+1. Convert raw `.txt` experimental data into `.mat` format using `conversion.m`.
+2. Use `Loading_data_10_exp.m` to combine datasets.
+3. Generate failure characteristics data using `Experiments_analysis.m`.
+
+### **2. Generate Wöhler Curve (MATLAB)**
+- Run `spread_trendline_extrapolation.py` for specific amplitude data.
+- Ensure paths for `.mat` files are correctly set.
+
+### **3. Predict Lifecycle (Python)**
+1. Use the `Prediction_tool.py` script:
+   - Define the limiting resistance, hysteresis filter threshold, and sampling rate.
+   - Provide paths for input `.txt` files (contact dynamics) and `.mat` files (failure characteristics).
+2. Run the script for predictions (approximately 10 minutes).
+
+---
+
+## **Requirements**
+- MATLAB (tested with version X.X)
+- Python (version >= 3.8) with the following libraries:
+  - NumPy
+  - SciPy
+  - Matplotlib
+- Sefram Viewer for `.rec` to `.txt` file conversion.
+
+---
+
+## **Results**
+The key results include:
+- Wöhler curve data and fatigue point predictions for various amplitudes (5 µm to 30 µm).
+- Validation metrics based on resistance and amplitude comparison.
+
+---
+
+## **Acknowledgments**
+Special thanks to my university, advisors, and colleagues for their support during this research.
+
+---
+
+## **License**
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
