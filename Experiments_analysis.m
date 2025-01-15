@@ -17,7 +17,7 @@ FilteringResolution = 25;         % Soothening Curve Resolution
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Load Entire Data
-folderPath = 'W:\1065_RT_Research_Development\810_Studenten\Bhagwat Kalathiya\Bhagwat_Thesis\Matlab\Bhagwat script'; 
+folderPath = 'Your_File_Path'; 
 loadedData = load(fullfile(folderPath, '15um_ProcessedData.mat'), 'R_Overall');  % Load the .mat file
 
 % Ensure that R_Overall is loaded into the workspace
@@ -85,7 +85,7 @@ for runIndex = 1:1  % Updated loop to iterate through all amplitudes
     %% Plotting Cycle vs Max Resistance
     subplot(6, 12, (runIndex - 1) * 24 + 1:((runIndex - 1) * 24 + 1) + 11)
     plot(1:TotalNumberofCycles, MaximumResistance, '-', 'LineWidth', 0.25);
-    title(['\bf{Amplitude = ', num2str(AmplitudeValue), ' µm}'], 'FontSize', 12);
+    title(['\bf{Amplitude = ', num2str(AmplitudeValue), ' Âµm}'], 'FontSize', 12);
     xlabel('Cycles', 'FontSize', 8);
     ylabel('R (Ohm)', 'FontSize', 8);
     set(gca, 'FontSize', 8);
@@ -415,11 +415,11 @@ figure(figure2);
 
 %% Plotting Failure curve
 
-            semilogy(MidPointIndexAll(25:end), Filtered_Oneper(25:end),  '-', 'LineWidth', 2.5, 'DisplayName', ['Trend Curve: 1% Probability, Amplitude = ', num2str(AmplitudeValue), ' µm' ], 'Color', 0.4*currentColor); hold on
-            semilogy(MidPointIndexAll(25:end), Filtered_Tenper(25:end),  '-', 'LineWidth', 2.5, 'DisplayName', ['Trend Curve: 10% Probability, Amplitude = ', num2str(AmplitudeValue), ' µm' ], 'Color', 0.6*currentColor); hold on
-            semilogy(MidPointIndexAll(25:end), Filtered_Twentyfiveper(25:end),  '-', 'LineWidth', 2.5, 'DisplayName', ['Trend Curve: 25% Probability, Amplitude = ', num2str(AmplitudeValue), ' µm' ], 'Color', 0.7*currentColor); hold on
-            semilogy(MidPointIndexAll(25:end), Filtered_Fiftyper(25:end),  '-', 'LineWidth', 2.5, 'DisplayName', ['Trend Curve: 50% Probability, Amplitude = ', num2str(AmplitudeValue), ' µm' ], 'Color', 0.8*currentColor); hold on    
-            semilogy(MidPointIndexAll(25:end), Filtered_Seventyfiveper(25:end),  '-', 'LineWidth', 2.5, 'DisplayName', ['Trend Curve: 75% Probability, Amplitude = ', num2str(AmplitudeValue), ' µm' ], 'Color', currentColor); hold on             
+            semilogy(MidPointIndexAll(25:end), Filtered_Oneper(25:end),  '-', 'LineWidth', 2.5, 'DisplayName', ['Trend Curve: 1% Probability, Amplitude = ', num2str(AmplitudeValue), ' Âµm' ], 'Color', 0.4*currentColor); hold on
+            semilogy(MidPointIndexAll(25:end), Filtered_Tenper(25:end),  '-', 'LineWidth', 2.5, 'DisplayName', ['Trend Curve: 10% Probability, Amplitude = ', num2str(AmplitudeValue), ' Âµm' ], 'Color', 0.6*currentColor); hold on
+            semilogy(MidPointIndexAll(25:end), Filtered_Twentyfiveper(25:end),  '-', 'LineWidth', 2.5, 'DisplayName', ['Trend Curve: 25% Probability, Amplitude = ', num2str(AmplitudeValue), ' Âµm' ], 'Color', 0.7*currentColor); hold on
+            semilogy(MidPointIndexAll(25:end), Filtered_Fiftyper(25:end),  '-', 'LineWidth', 2.5, 'DisplayName', ['Trend Curve: 50% Probability, Amplitude = ', num2str(AmplitudeValue), ' Âµm' ], 'Color', 0.8*currentColor); hold on    
+            semilogy(MidPointIndexAll(25:end), Filtered_Seventyfiveper(25:end),  '-', 'LineWidth', 2.5, 'DisplayName', ['Trend Curve: 75% Probability, Amplitude = ', num2str(AmplitudeValue), ' Âµm' ], 'Color', currentColor); hold on             
          
             
               %% Trend line//Previous Code
@@ -608,8 +608,8 @@ figure(figure2);
     
 %     plot(AllXIntersectionPoint, Amplitude, 'o-', 'MarkerSize',4);
     xlabel('\bf{Cycles}', 'FontSize', 15);
-    ylabel('\bf{Amplitude (µm)}', 'FontSize', 15);
-    title(['{\bf WÖHLER CURVE} {\fontsize{15}(Limiting Resistance =  ', num2str(LimitingResistance), ' Ohm)}'], 'FontSize', 20);
+    ylabel('\bf{Amplitude (Âµm)}', 'FontSize', 15);
+    title(['{\bf WÃ–HLER CURVE} {\fontsize{15}(Limiting Resistance =  ', num2str(LimitingResistance), ' Ohm)}'], 'FontSize', 20);
 %     text(0.5, 1, ['{\fontsize{15}(Limiting Resistance = ', num2str(LimitingResistance), ' Ohm)}'],'FontSize', 15, 'HorizontalAlignment', 'center', 'Units', 'normalized');
     ylim([0 30]);
     xlim([0 40*10^(5)]);
