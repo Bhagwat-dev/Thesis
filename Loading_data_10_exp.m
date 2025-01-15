@@ -16,7 +16,7 @@ FilteringResolution = 25;         % Smoothing Curve Resolution
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Loading Data
-folderPath = 'W:\1065_RT_Research_Development\810_Studenten\Bhagwat Kalathiya\Bhagwat_Thesis\Matlab\Bhagwat script\Data_15um';
+folderPath = 'Your_File_Path';
 %AmplitudeValue = 10;
 
 try
