@@ -42,11 +42,13 @@ Prediction Accuracy: 90%
 ---
 
 ## **Requirements**
-- MATLAB (tested with version X.X)
+- MATLAB (tested with version 2014)
 - Python (version >= 3.8) with the following libraries:
   - NumPy
   - SciPy
   - Matplotlib
+  - Rainflow
+  - Pandas
 - Sefram Viewer for `.rec` to `.txt` file conversion.
 
 ---
@@ -59,7 +61,7 @@ The key results include:
 ---
 
 ## **Acknowledgments**
-Special thanks to my university, advisors, and colleagues for their support during this research.
+Special thanks to THD (my university), Rosenberger Group and colleagues for their support during this research.
 
 ---
 
