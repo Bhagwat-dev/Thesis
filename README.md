@@ -1,4 +1,4 @@
-# Thesis: Concept Evaluation for Lifetime Prediction of Electrical Contacts under Dynamic Load
+# Thesis: Concept Evaluation for Lifetime Prediction of Electric Contacts under Dynamic Load
 
 This repository contains materials and scripts from my Master's thesis, which focuses on analyzing contact dynamics and predicting the lifecycle of electrical contacts using Python and MATLAB. The project includes steps from data preprocessing to fatigue curve generation, prediction and validation of Result.
 
