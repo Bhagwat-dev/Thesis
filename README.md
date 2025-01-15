@@ -63,8 +63,4 @@ The key results include:
 ## **Acknowledgments**
 Special thanks to THD (my university), Rosenberger Group and colleagues for their support during this research.
 
----
-
-## **License**
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
