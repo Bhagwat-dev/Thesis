@@ -27,18 +27,18 @@ sampling_interval = 500e-6 # here 500 µs
 frequency_hz = 100
 ################################################################################################################################ important file paths
 # Define the file path for contact dynamics .txt file here
-file_path_contact_dynamics = r'W:\1065_RT_Research_Development\810_Studenten\Bhagwat Kalathiya\Bhagwat_Thesis\Experiments\Test\Sample_test\Sin_sweep_100\Finale_test\T_ss_100_05\T_SS_050001.txt'
+file_path_contact_dynamics = r'Your_File_Path.txt'
 
 # Define failure characteristics file path here (.mat files) for 10, 20, 25 µm amplitudes
 data_files = {
-    '25': r'W:\1065_RT_Research_Development\810_Studenten\Bhagwat Kalathiya\Bhagwat_Thesis\Matlab\Final Script\Wohler_curve_data.mat',
-    '20': r'W:\1065_RT_Research_Development\810_Studenten\Bhagwat Kalathiya\Bhagwat_Thesis\Matlab\Final Script\Wohler_curve_data_20.mat',
-#    '15': r'W:\1065_RT_Research_Development\810_Studenten\Bhagwat Kalathiya\Bhagwat_Thesis\Matlab\Final Script\Wohler_curve_data_15.mat',
-    '10': r'W:\1065_RT_Research_Development\810_Studenten\Bhagwat Kalathiya\Bhagwat_Thesis\Matlab\Final Script\Wohler_curve_data_10.mat'
+    '25': r'Wohler_curve_data_5.mat',
+    '20': r'Wohler_curve_data_20.mat',
+#    '15': r'Wohler_curve_data_15.mat',
+    '10': r'Wohler_curve_data_10.mat'
 }
 
 # Define failure characteristics for validation (.mat file)
-failure_characteristics_validation = r'W:\1065_RT_Research_Development\810_Studenten\Bhagwat Kalathiya\Bhagwat_Thesis\Matlab\Bhagwat script\Selected_exp_data\all_data.mat'
+failure_characteristics_validation = r'Your_File_Path.mat'
 
 ############################################################################################################################################################################
 # Section 1 : Contact dynamics data loading and hysteresis filter 
