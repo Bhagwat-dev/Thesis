@@ -29,7 +29,7 @@ Prediction Accuracy: 90%
 2. Use `Loading_data_10_exp.m` to combine datasets.
 3. Generate failure characteristics data using `Experiments_analysis.m`.
 
-### **2. Generate Wöhler Curve from failure characteristucs data(Python)**
+### **2. Generate Wöhler Curve from failure characteristucs data (Python)**
 - Run `spread_trendline_extrapolation.py` for specific amplitude data.
 - Ensure paths for `.mat` files are correctly set.
 
