@@ -64,11 +64,11 @@ colors = {
     '75%': ['blue','orange','#000000', '#800080', '#FFC0CB']
 }
 data_files = {
-    '25': r'W:\1065_RT_Research_Development\810_Studenten\Bhagwat Kalathiya\Bhagwat_Thesis\Matlab\Final Script\Wohler_curve_data.mat',
-    '20': r'W:\1065_RT_Research_Development\810_Studenten\Bhagwat Kalathiya\Bhagwat_Thesis\Matlab\Final Script\Wohler_curve_data_20.mat',
-#    '15': r'W:\1065_RT_Research_Development\810_Studenten\Bhagwat Kalathiya\Bhagwat_Thesis\Matlab\Final Script\Wohler_curve_data_15.mat',
-    '10': r'W:\1065_RT_Research_Development\810_Studenten\Bhagwat Kalathiya\Bhagwat_Thesis\Matlab\Final Script\Wohler_curve_data_10.mat',
-#    '5': r'W:\1065_RT_Research_Development\810_Studenten\Bhagwat Kalathiya\Bhagwat_Thesis\Matlab\Final Script\Wohler_curve_data_5.mat'
+    '25': r'Wohler_curve_data_25.mat',
+    '20': r'Wohler_curve_data_20.mat',
+#    '15': r'Wohler_curve_data_15.mat',
+    '10': r'Wohler_curve_data_10.mat',
+#    '5': r'Wohler_curve_data_5.mat'
 }
 
 
